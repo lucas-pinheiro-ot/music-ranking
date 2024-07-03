@@ -1,0 +1,61 @@
+button {
+        all: unset;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 2.5em;
+        font-size: 3em;
+        border-radius: 50%;
+        aspect-ratio: 1/1;
+        
+        transition: all .2s;
+    }
+button:hover { filter: brightness(1.15); }
+button:active { filter: brightness(.85); }
+
+.temp { position: absolute; background-color: rgb(11, 76, 120);  }
+
+#list {
+    position: absolute;
+    top: 0px;
+}
+
+#list > * {
+    width: 10em;
+    height: 1.5em;
+    
+    padding: 0em 1em;
+    border: 1px solid white;
+}
+
+.logContainer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 2em;
+
+    height: 200px;
+    width: 80vw;
+    overflow: hidden;
+    
+    mask:
+        linear-gradient(#00000000 20%, rgb(255, 255, 255) 40%);
+    mask-repeat: no-repeat;
+    
+}
+
+#logger {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+
+    transition: all .2s;
+}
+
+#logger > * {
+    font-size: .8em;
+    font-style: italic;
+    font-weight: 400;
+}
